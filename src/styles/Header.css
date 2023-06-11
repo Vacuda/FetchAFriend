@@ -1,0 +1,122 @@
+.HeaderArea {
+    width: 100%;
+    height: 208px;
+    overflow: hidden;
+}
+
+.LogoArea {
+    width: 50%;
+    height: 160px;
+    display: inline-block;
+    position: relative;
+}
+
+.MenuArea {
+    width: 50%;
+    height: 160px;
+    display: inline-block;
+    position: relative;
+}
+
+.TitleArea {
+    width: 100%;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+}
+
+.logo_pic_img {
+    width: auto;
+    height: 160px;
+    display: inline-block;
+    margin: 0;
+    z-index: 1;
+}
+
+.logo_text_img {
+    width: auto;
+    height: 60px;
+    overflow: visible;
+    margin: 0 0 0 14px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.division {
+    background-color: rgb(255, 162, 63);
+    border-color: rgb(255, 162, 63);
+    height: 3px;
+    width: 100%;
+    margin: 3px auto 3px auto;
+    display: block;
+    border-radius: 10px;
+    z-index: 6;
+}
+
+.title_wrap {
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+    display: table;
+}
+
+.title {
+    display: table-cell;
+    vertical-align: top;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(255, 162, 63);
+    text-shadow: 1px 1px 1px rgb(37, 25, 0);
+}
+
+.greeting_container {
+    bottom: 0px;
+    width: 100%;
+    position: absolute;
+}
+
+.greeting_box_rightleaning {
+    float: right;
+    display: table;
+    border-spacing: 5px;
+    
+}
+
+.greeting {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 14px;
+    padding-right: 5px;
+}
+
+.logout_button {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color: white;
+    border-radius: 6px;
+    border: solid 2px rgb(255, 162, 63);
+    width: 60px;
+    height: 20px;
+    font-size: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px rgb(37, 25, 0);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .logout_button:hover {
+        box-shadow: inset 0px 0px 8px 1px rgb(255, 162, 63), 0px 0px 3px rgb(37, 25, 0);
+        background-color: rgb(242, 238, 216);
+    }
+
+    .logout_button:focus {
+        box-shadow: inset 0px 0px 1px 1px rgb(255, 162, 63);
+        background-color: rgb(242, 238, 216);
+        color: white;
+        transition: 0s;
+    }

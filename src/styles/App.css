@@ -1,0 +1,104 @@
+
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+    /* outline: 1px dotted red; */
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+/*    background-color: rgb(242, 238, 216);*/
+}
+
+.outercontainer {
+    background-color: rgb(242, 238, 216);
+    height: 100vh;
+}
+
+.mycontainer {
+    background-color: rgb(242, 238, 216);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* SMALL */
+
+@media only screen and (max-width: 480px) {
+
+    .mycontainer {
+        width: 100%;
+        min-height: 800px;
+        margin: 0px auto;
+        padding: 20px;
+    }
+
+        .mycontainer h1 {
+            font-size: 30px;
+        }
+
+        .mycontainer h3 {
+            font-size: 16px;
+        }
+
+        .mycontainer p {
+            font-size: 12px;
+        }
+}
+
+/* MEDIUM */
+
+@media only screen and (min-width: 481px) {
+
+    .mycontainer {
+        width: 100%;
+        min-height: 800px;
+        margin: 0px;
+        padding: 20px 30px;
+    }
+
+        .mycontainer h1 {
+            font-size: 30px;
+        }
+
+        .mycontainer h3 {
+            font-size: 16px;
+        }
+
+        .mycontainer p {
+            font-size: 12px;
+        }
+}
+
+/* LARGE */
+
+@media only screen and (min-width: 1024px) {
+
+    .mycontainer {
+        width: 970px;
+        min-height: 800px;
+        margin: 0px auto;
+        padding: 20px 40px;
+    }
+
+        .mycontainer h1 {
+            font-size: 30px;
+        }
+
+        .mycontainer h3 {
+            font-size: 16px;
+        }
+
+        .mycontainer p {
+            font-size: 12px;
+        }
+}

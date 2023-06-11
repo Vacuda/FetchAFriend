@@ -1,0 +1,413 @@
+.DogResultsContainer {
+    margin: 0px auto 0px auto;
+    width: 100%;
+    background-color: white;
+    border: solid 3px rgb(255, 162, 63);
+    border-radius: 18px;
+    overflow: hidden;
+    min-height: 220px;
+    display: table;
+    padding: 0px 30px 15px 30px;
+}
+
+.dog_list {
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.navbar {
+    margin-top: 8px;
+    height: 45px;
+    overflow: hidden;
+    position: relative;
+}
+
+.navbar_spacer {
+    height: 45px;
+    display: inline-block;
+
+}
+
+.navbar_page_totals {
+    float: right;
+    margin-top: 12px;
+    color: rgb(255, 162, 63);
+}
+
+.navbar_directional {
+    width: 10%;
+    height: 45px;
+    display: inline-block;
+}
+
+
+
+    .navbar_wedge_L {
+        cursor: pointer;
+        float: right;
+        transform: translateY(25%) rotate(90deg);
+    }
+
+        .navbar_wedge_L:hover{
+            cursor: pointer;
+            float: right;
+            transform: translateY(25%) rotate(90deg) scale(1.2);
+        }
+
+    .navbar_wedge_R {
+        cursor: pointer;    
+        transform: translateY(25%) rotate(-90deg);
+    }
+
+        .navbar_wedge_R:hover{
+            cursor: pointer;
+            transform: translateY(25%) rotate(-90deg) scale(1.2);
+        }
+
+    .navbar_wedge_L_desat {
+        float: right;
+        transform: translateY(25%) rotate(90deg);
+        filter: saturate(0%);
+    }
+
+    .navbar_wedge_R_desat {
+        transform: translateY(25%) rotate(-90deg);
+        filter: saturate(0%);
+    }
+
+.navbar_context {
+    height: 45px;
+    display: inline-block;
+}
+
+
+.context_button_results {
+    margin: 7px auto 7px auto;
+    color: black;
+    background-color: white;
+    text-align: center;
+    width: 90%;
+    height: 31px;
+    line-height: 23px;
+    font-weight: bold;
+    font-size: 18px;
+    border: solid 3px rgb(255, 162, 63);
+    box-shadow: 0px 0px 3px rgb(37, 25, 0);
+    border-radius: 18px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+    .context_button_results:hover {
+        width: 93%;
+        font-size: 19px;
+        box-shadow: inset 0px 0px 8px 1px rgb(255, 162, 63), 0px 0px 3px rgb(37, 25, 0);
+        border: solid 3px rgb(255, 162, 63);
+        background-color: rgb(242, 238, 216);
+    }
+
+    .context_button_results:focus {
+        width: 90%;
+        font-size: 18px;
+        box-shadow: inset 0px 0px 1px 1px rgb(255, 162, 63);
+        border: solid 3px rgb(255, 162, 63);
+        background-color: rgb(242, 238, 216);
+        color: white;
+        transition: 0s;
+    }
+
+
+.context_button_favorites {
+    margin: 7px auto 7px auto;
+    background: radial-gradient(rgb(154, 189, 76), green);
+    text-align: center;
+    width: 90%;
+    height: 31px;
+    line-height: 23px;
+    font-weight: bold;
+    font-size: 18px;
+    border: solid 3px green;
+    box-shadow: inset 0px 0px 3px rgb(44, 72, 31), 0px 0px 3px rgb(37, 25, 0);
+    border-radius: 18px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+    .context_button_favorites:hover {
+        width: 93%;
+        font-size: 19px;
+        box-shadow: inset 0px 0px 5px rgb(174, 212, 163), 0px 0px 3px rgb(37, 25, 0);
+        border: solid 3px green;
+    }
+
+    .context_button_favorites:focus {
+        width: 90%;
+        font-size: 18px;
+        box-shadow: inset 0px 0px 1px 1px rgb(255, 162, 63);
+        border: solid 3px rgb(255, 162, 63);
+        background-color: rgb(242, 238, 216);
+        color: white;
+        transition: 0s;
+    }
+
+.findmatch_container {
+    display: block;
+    width: 100%;
+}
+
+.findmatch_button {
+    color: black;
+    background: radial-gradient(rgb(154, 189, 76), green);
+    width: 60%;
+    height: 80px;
+    line-height: 70px;
+    font-weight: bold;
+    border: solid 3px green;
+    box-shadow: inset 0px 0px 2px 2px rgb(174, 212, 163), 0px 0px 3px rgb(37, 25, 0);
+    border-radius: 18px;
+    margin: 20px auto 20px auto;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+}
+
+    .findmatch_button:hover {
+        width: 63%;
+        font-size: 21px;
+        box-shadow: inset 0px 0px 8px 1px rgb(174, 212, 163), 0px 0px 3px rgb(37, 25, 0);
+        border: solid 3px green;
+        background-color: rgb(242, 238, 216);
+    }
+
+    .findmatch_button:focus {
+        width: 40%;
+        font-size: 19px;
+        box-shadow: inset 0px 0px 1px 1px rgb(255, 162, 63);
+        border: solid 3px rgb(255, 162, 63);
+        background-color: rgb(242, 238, 216);
+        color: white;
+        transition: 0s;
+    }
+
+
+
+
+
+.results_context_title {
+    text-align: center;
+    font-size: 22px;
+    text-shadow: 1px 1px 2px rgb(37, 25, 0);
+    width: 100%;
+    height: 30px;
+    display: block;
+    margin: 0px auto 0px auto;
+}
+
+.no_results_message {
+    margin-top: 48px;
+    text-align: center;
+}
+
+
+
+
+
+.card {
+    width: 40%;
+    margin: 20px 0px;
+    height: 200px;
+    display: inline-block;
+    cursor: pointer;
+    border: dashed 1px rgb(255, 162, 63);
+    background-color: rgb(242, 238, 216);
+    border-radius: 18px;
+    overflow: hidden;
+    text-align: center;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 4px 4px 3px 2px rgb(104, 88, 47);
+    }
+
+.card-header {
+    margin: 0px auto 10px auto;
+    text-align: center;
+    padding: 8px;
+    display: block;
+    overflow: hidden;
+}
+
+.card-header-favorited {
+    background: radial-gradient(rgb(154, 189, 76), green);
+}
+
+.dog_pic {
+    width: auto;
+    height: 100px;
+    border-radius: 18px;
+    border: solid 1px rgb(255, 162, 63);
+    box-shadow: 3px 3px 3px 1px rgb(104, 88, 47);
+}
+
+
+.card-body {
+    margin-top: 10px;
+    height: 40%;
+}
+
+.card-text {
+    margin: 0px 0px 3px 0px;
+}
+
+
+/* SMALL */
+
+@media only screen and (max-width: 480px) {
+
+    .card-header {
+        font-size: 25px;
+    }
+
+    .card-body {
+        font-size: 18px;
+        padding: 0px 20px 20px 20px;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+        margin: 20px auto 0px auto;
+
+        display: block;
+    }
+
+    .dog_pic {
+        width: 80%;
+        height: auto;
+        border-radius: 18px;
+        border: solid 1px rgb(255, 162, 63);
+        box-shadow: 3px 3px 3px 1px rgb(104, 88, 47);
+    }
+
+    .findmatch_button {
+        font-size: 12px;
+    }
+
+    .navbar_context {
+        width: 40%;
+    }
+
+    .navbar_spacer {
+        width: 20%;
+    }
+
+
+
+}
+
+/* MEDIUM  SMALL */
+
+@media only screen and (min-width: 481px) {
+
+    .card {
+        height: 200px;
+        width: 46%;
+        margin: 20px 2%;
+        display: inline-block;
+    }
+
+    .card-header {
+        font-size: 12px;
+    }
+
+    .card-text {
+        font-size: 10px;
+    }
+
+    .findmatch_button {
+        font-size: 12px;
+    }
+
+    .navbar_context {
+        width: 40%;
+    }
+
+    .navbar_spacer {
+        width: 20%;
+    }
+
+
+
+}
+
+/* MEDIUM  LARGE */
+
+@media only screen and (min-width: 547px) {
+    .card {
+        height: 200px;
+        width: 46%;
+        margin: 20px 2%;
+        display: inline-block;
+    }
+
+    .card-header {
+        font-size: 14px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .findmatch_button {
+        font-size: 16px;
+    }
+
+    .navbar_context {
+        width: 30%;
+    }
+
+    .navbar_spacer {
+        width: 25%;
+    }
+
+
+
+}
+
+/* LARGE */
+
+@media only screen and (min-width: 1024px) {
+
+    .card {
+        width: 29.33%;
+        height: 200px;
+        margin: 20px 2%;
+        display: inline-block;
+    }
+
+    .card-header {
+        font-size: 14px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .findmatch_button {
+        font-size: 20px;
+    }
+
+    .navbar_context {
+        width: 20%;
+    }
+
+    .navbar_spacer {
+        width: 30%;
+    }
+
+
+}
