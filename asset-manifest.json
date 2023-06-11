@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/FetchAFriend/static/css/main.7606ff33.css",
+    "main.js": "/FetchAFriend/static/js/main.6df0cef6.js",
+    "static/media/logo_pic.png": "/FetchAFriend/static/media/logo_pic.186afb7ab62b3151bbd6.png",
+    "static/media/logo_text.png": "/FetchAFriend/static/media/logo_text.05ab40118a7c9587cfff.png",
+    "index.html": "/FetchAFriend/index.html",
+    "main.7606ff33.css.map": "/FetchAFriend/static/css/main.7606ff33.css.map",
+    "main.6df0cef6.js.map": "/FetchAFriend/static/js/main.6df0cef6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7606ff33.css",
+    "static/js/main.6df0cef6.js"
+  ]
+}
