@@ -11,13 +11,16 @@
 /*    background-color: rgb(242, 238, 216);*/
 }
 
-.outercontainer {
-    background-color: rgb(242, 238, 216);
-    height: 100vh;
-}
+
 
 .mycontainer {
     background-color: rgb(242, 238, 216);
+    margin: 0px auto 0px auto;
+}
+
+html {
+    background-color: rgb(242, 238, 216);
+    overflow-y: scroll;
 }
 
 
@@ -38,7 +41,6 @@
     .mycontainer {
         width: 100%;
         min-height: 800px;
-        margin: 0px auto;
         padding: 20px;
     }
 
@@ -55,14 +57,13 @@
         }
 }
 
-/* MEDIUM */
+/* MEDIUM  SMALL */
 
 @media only screen and (min-width: 481px) {
 
     .mycontainer {
         width: 100%;
         min-height: 800px;
-        margin: 0px;
         padding: 20px 30px;
     }
 
@@ -86,7 +87,6 @@
     .mycontainer {
         width: 970px;
         min-height: 800px;
-        margin: 0px auto;
         padding: 20px 40px;
     }
 
@@ -101,4 +101,4 @@
         .mycontainer p {
             font-size: 12px;
         }
-}
+    }

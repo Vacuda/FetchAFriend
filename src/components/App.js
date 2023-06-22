@@ -132,7 +132,7 @@ function App() {
 
     /* APP CONTENT */
     const AppContent =
-        <div className="outercontainer">
+
             <div className="mycontainer">
 
                 <>
@@ -150,7 +150,7 @@ function App() {
                     <Footer />
                 </>
             </div>
-        </div>
+
 
     return (AppContent)
 }
