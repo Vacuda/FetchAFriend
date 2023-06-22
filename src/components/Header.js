@@ -54,7 +54,7 @@ function Header(data) {
         if (data.trigger_matchresults) {
             set_title_name(title_matched);
         }
-        else {
+        else if (title == title_matched) {
             set_title_name(title_search);
         }
 
