@@ -52,8 +52,11 @@ function DogResults(data) {
     useEffect(() => {
 
         //early exit
-        if (!data.dog_list_package) {
+        if (!data.dog_list_package) { 
             set_dog_window_list(null);
+
+            set_total_number_pages_search(0);
+            set_current_page_search(0);
             return;
         } 
 
@@ -63,6 +66,10 @@ function DogResults(data) {
             set_R_triangle(R_triangle_not_active);
             set_dog_window_list(null);
             set_showMatchButton(false);
+
+            set_total_number_pages_search(0);
+            set_current_page_search(0);
+
             return;
         }
         else {

@@ -222,8 +222,6 @@ function ShelterSearch(data) {
 
     const handleSearchSubmit = () => {
 
-        console.log("do we get here.")
-
         //get agemin and agemax
         let ageMin = 0;
         let ageMax = 30;
