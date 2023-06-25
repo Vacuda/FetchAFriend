@@ -14,7 +14,7 @@ function DogWindow(data) {
 
     const header_tag_regular = "card-header";
     const header_tag_favorited = "card-header card-header-favorited";
-    const [header_tag, set_header_tag] = useState(header_tag_favorited);
+    const [header_tag, set_header_tag] = useState(header_tag_regular);
     const [favorited_state, set_favorited_state] = useState();
 
     //on startup
